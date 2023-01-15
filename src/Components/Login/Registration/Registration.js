@@ -4,13 +4,17 @@ import { Link } from 'react-router-dom';
 import './Registration.css';
 
 const Registration = () => {
+    const handleRegistration = event =>{
+        event.preventDefault();
+    }
+
     return (
         <>
             <div className="form-container">
             <h2 className="form-title">
                 Registration
             </h2>
-            <form>
+            <form onSubmit={handleRegistration}>
                 <div className="control">
                     <label className='email-title' htmlFor="email">Email</label>
                     <input type="email" name='email' required/>

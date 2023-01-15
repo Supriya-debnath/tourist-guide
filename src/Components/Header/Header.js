@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './Header.css';
 
 const Header = () => {
     return (
@@ -13,11 +14,11 @@ const Header = () => {
             height="30"
            className="d-inline-block align-top"
             />
-            Tourist
+            <em>Tourist</em>
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="navbar-nav ms-auto mb-2 mb-lg-0">
           <Nav.Link as={Link} to="/home">Home</Nav.Link>
           <Nav.Link as={Link} to="/services">Services</Nav.Link>
           <Nav.Link as={Link} to="/destination">Destination</Nav.Link>
@@ -40,7 +41,9 @@ const Header = () => {
           </Nav>
          
           <Nav>
-          <Nav.Link as={Link} to="/login">Sign in</Nav.Link>
+          <Nav.Link as={Link} to="/login"> <i class="fa-solid fa-right-to-bracket"></i>
+          Sign in
+           </Nav.Link>
           <Nav.Link as={Link} to="/dashboard">
             Dashboard
           </Nav.Link>

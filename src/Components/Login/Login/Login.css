@@ -3,7 +3,7 @@
 }
 .form-container{
     width: 500px;
-    height: 600px;
+    height: 560px;
     margin: 20px auto;
     border: 1px solid #95A0A7;
     border-radius: 8px;
@@ -26,7 +26,7 @@
     text-align: left;
     padding-left: 33px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 20px;
     margin-bottom: 10px;
     color: #95A0A7;
@@ -37,7 +37,7 @@
     height: 50px;
     border: 1px solid #95A0A7;
     border-radius: 5px;
-    font-size: 1.5em;
+    font-size: 1em;
     padding-left: 10px;
 }
 .pass{
@@ -79,5 +79,11 @@
 
 .google-btn button:hover {
     background-color: #da0037;
+}
+
+.log-img img{
+    width: 450px;
+    height: 520px;
+    padding-top: 20px;
 }
 

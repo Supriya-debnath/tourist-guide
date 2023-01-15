@@ -1,29 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Service.css';
+import './ServiceDetails.css';
 
-const Service = ({service}) => {
+const ServiceDetails = ({service}) => {
     console.log(service);
-    const { division,divisionId,img, description} =service;
+    const {img,district,districtInfo} =service;
 
     return (
         <div className="col product">
             
                 <div className="card h-100">
-                    <img src={img} className="card-img-top" alt={division} />
+                    <img src={img} className="card-img-top" alt={district} />
                     <div className="card-body">
                         <h4 className="card-title cursive-text text-center">
-                            {division}
+                            {district}
                         </h4>
 
                         <p className="card-text more-small-text text-muted text-justify">
-                            {description}
+                            {districtInfo}
                         </p>
 
                     </div>
 
-                    <Link to={`/${divisionId}`}>
-                    <button className="btn btn-success text-white px-4 w-75 rounded-0 order-btn "> View More</button>
+                    <Link>
+                    <button className="btn btn-success text-white px-4 w-75 rounded-0 order-btn ">Book Now</button>
                     </Link>
 
                 </div>
@@ -32,4 +32,4 @@ const Service = ({service}) => {
     );
 };
 
-export default Service;
+export default ServiceDetails;
