@@ -11,6 +11,7 @@ const Booking = () => {
     const { id } = useParams();
 
     const [booking, setBooking] = useState({});
+    console.log(booking);
     useEffect(() => {
         const uri = `http://localhost:5000/services/${id}`;
         fetch(uri)
@@ -40,7 +41,7 @@ const Booking = () => {
                             />
                            
                             <p className="products-card-para primary">
-                                Name: {booking?.name}
+                                Name: {booking?.district}
                             </p>
 
                         </Col>

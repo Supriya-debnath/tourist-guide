@@ -1,3 +1,12 @@
 .nav-link {
-    color: rgb(255, 0, 136) !important;
+    font-weight: 600;
+    color: rgb(178, 29, 51) !important;
+    }
+
+    .nav-link:hover {
+        color: rgb(68, 89, 165) !important;
+        }
+
+    .tourist{
+        font-weight: 800;
     }

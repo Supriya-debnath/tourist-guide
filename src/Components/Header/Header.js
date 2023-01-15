@@ -6,7 +6,7 @@ import './Header.css';
 const Header = () => {
     return (
         <>
-      <Navbar collapseOnSelect expand="lg" bg="dark" sticky="top" variant="dark">
+      <Navbar collapseOnSelect expand="lg" sticky="top" variant="light">
       <Container>
         <Navbar.Brand href="#home">
         <img src="https://thumbs.dreamstime.com/z/travel-logo-design-agency-vector-inspiration-template-218267349.jpg" alt="" 
@@ -14,7 +14,7 @@ const Header = () => {
             height="30"
            className="d-inline-block align-top"
             />
-            <em>Tourist</em>
+            <em className='tourist'>Tourist</em>
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
