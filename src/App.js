@@ -24,9 +24,17 @@ import MymensinghService from './Components/All District Details/MymensinghServi
 import KhulnaService from './Components/All District Details/KhulnaService';
 import RangpurService from './Components/All District Details/RangpurService';
 import RajshahiService from './Components/All District Details/RajshahiService';
+import { createContext, useState } from 'react';
+import PrivateRoute from './Components/Login/PrivateRoute/PrivateRoute';
+
+export const UserContext=createContext();
 
 function App() {
+  const [loggedInUser, setLoggedInUser] = useState({});
+  const [cart, setCart] = useState({});
+
   return (
+    <UserContext.Provider value={{loggedInUser, setLoggedInUser, cart, setCart}}>
     <div className="App">
          
        <Header></Header>
@@ -76,13 +84,18 @@ function App() {
           <Route path="/login" element={ <Login></Login>}>
          </Route>
 
-          <Route path="/registration" element={ <Registration></Registration>}>
+          <Route path="/register" element={ <Registration></Registration>}>
          </Route>
 
-          <Route 
+         <Route
           path="/booking/:id" 
-          element={ <Booking></Booking>}>
+          element={<PrivateRoute><Booking></Booking></PrivateRoute>}>
          </Route>
+{/* 
+         <Route
+          path="/booking/:id" 
+          element={<Booking></Booking>}>
+         </Route> */}
 
           <Route path="*" element={<NotFound />}>
             
@@ -91,6 +104,7 @@ function App() {
       <Footer></Footer>
 
     </div>
+    </UserContext.Provider>
   );
 }
 

@@ -22,6 +22,10 @@ const ServiceDetails = ({service}) => {
                         </p>
 
                     </div>
+                    <ul>
+                        <li><a href="#">View Tourist Place</a></li>
+                        <li><a href="#">View Traditional food</a></li>
+                    </ul>
 
                     <Link to={`/booking/${_id}`}>
                     <button className="btn btn-success text-white px-4 w-75 rounded-0 order-btn ">Book Now</button>
