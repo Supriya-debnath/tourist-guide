@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import './Contact.css';
 
 const Contact = () => {
@@ -7,7 +7,22 @@ const Contact = () => {
         <>
         <section className='contact'>
         <Container>
-        <div className="contactContainer py-5">
+          <Row>
+          <Col xs={12} md={4}>
+            <div className='discover'>
+              <h2>Discover Bangladesh</h2>
+              <p>Discover Bangladesh Naturally!</p>
+              <br />
+              <br />
+              <h4>E-mail</h4>
+              <hr />
+              <h6>For Tour Purpose: tour@beautyofruralengal.com <br />
+              For Official Purpose: info@beautyofruralengal.com</h6>
+            </div>
+          </Col>
+
+          <Col xs={12} md={8}>
+          <div className="contactContainer py-5">
           <div className="row">
             <div className="col-lg-6 mx-auto">
               <div className="card">
@@ -63,6 +78,10 @@ const Contact = () => {
               </div>
             </div>
           </div>
+          </Col>
+            
+          </Row>
+      
         </Container>
       </section>
         </>

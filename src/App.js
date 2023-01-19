@@ -26,6 +26,8 @@ import RangpurService from './Components/All District Details/RangpurService';
 import RajshahiService from './Components/All District Details/RajshahiService';
 import { createContext, useState } from 'react';
 import PrivateRoute from './Components/Login/PrivateRoute/PrivateRoute';
+import DreamDestination from './Components/DreamDestination/DreamDestination';
+import TourPackages from './Components/TourPackages/TourPackages';
 
 export const UserContext=createContext();
 
@@ -45,7 +47,7 @@ function App() {
           <Route path="/home" element={<Home />}>
           </Route>
 
-          <Route path="/destination" element={ <Destination></Destination>}>
+          <Route path="/dreamDestination" element={ <DreamDestination></DreamDestination>}>
           </Route>
 
           <Route path="/about" element={<About></About>}>
@@ -79,6 +81,9 @@ function App() {
          </Route>
 
           <Route path="/blogs" element={ <OurBlogs></OurBlogs>}>
+         </Route>
+
+          <Route path="/tourPackages" element={ <TourPackages></TourPackages>}>
          </Route>
 
           <Route path="/login" element={ <Login></Login>}>

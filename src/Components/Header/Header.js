@@ -35,7 +35,7 @@ const Header = () => {
           <Nav.Link as={Link} to="/home">Home</Nav.Link>
           <Nav.Link as={Link} to="/about">About</Nav.Link>
           <Nav.Link as={Link} to="/services">Services</Nav.Link>
-          <Nav.Link as={Link} to="/destination">Destination</Nav.Link>
+          <Nav.Link as={Link} to="/dreamDestination">Destination</Nav.Link>
           <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
           <Nav.Link as={Link} to="/contact">Contact us</Nav.Link>
 
@@ -72,9 +72,13 @@ const Header = () => {
           <button className='signIn'>Sign in</button>
            </Nav.Link>}
 
-          <Nav.Link as={Link} to="/register">
-            <button className='signIn'>Register</button>
+          <Nav.Link as={Link} to="/tourPackages">
+            <button className='signIn'>Tour Packages</button>
           </Nav.Link>
+
+          {/* <Nav.Link as={Link} to="/register">
+            <button className='signIn'>Register</button>
+          </Nav.Link> */}
           {/* <Nav.Link as={Link} to="/dashboard">
             Dashboard
           </Nav.Link> */}
