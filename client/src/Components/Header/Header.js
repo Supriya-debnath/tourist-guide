@@ -1,10 +1,12 @@
 import { signOut } from "firebase/auth";
 import React from "react";
 import { useContext } from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Contexts/AuthProvider/AuthProvider";
 // import { AuthContext } from '../Contexts/AuthProvider';
+import { BsFillTelephoneFill } from 'react-icons/bs';
+import { FaSignInAlt } from 'react-icons/fa';
 import "./Header.css";
 
 const Header = () => {
@@ -19,7 +21,31 @@ const Header = () => {
 
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" sticky="top" variant="light">
+
+<section class=" py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <ul class="nav">
+                        <li className="ps-1"> <BsFillTelephoneFill/>+012 345 6789</li>
+                        <li class="ps-3"><i class="fa fa-envelope"></i> info@example.com</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="nav float-end">
+                        <li class="me-3"><a href=""><i class="fab fa-facebook-f "></i></a></li>
+                        <li class="me-3"><a href=""><i class="fab fa-twitter "></i></a></li>
+                        <li class="me-3"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="me-3"><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+      <Navbar collapseOnSelect expand="lg" sticky="top" bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="#home">
             <img
@@ -33,9 +59,9 @@ const Header = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <Nav className="navbar-nav me-auto mb-4 mb-lg-0">
               {/* <Nav className="me-auto"> */}
-              <Nav.Link as={Link} to="/home">
+              <Nav.Link as={Link} to="/home" className="bg-orange px-3">
                 Home
               </Nav.Link>
               <Nav.Link as={Link} to="/services">
@@ -53,9 +79,12 @@ const Header = () => {
               <Nav.Link as={Link} to="/contact">
                 Contact us
               </Nav.Link>
-              <Nav.Link as={Link} to="/tour-package">
-                <button className="signIn">Tour Packages</button>
-              </Nav.Link>
+              </Nav>
+
+              <Nav className="navbar-nav ms-auto mb-4 mb-lg-0">
+                <Nav.Link as={Link} to="/tour-package">
+                  <button className="">Tour Packages</button>
+                </Nav.Link>
 
               {user?.uid ? (
                 <>
@@ -88,10 +117,12 @@ const Header = () => {
                 </>
               ) : (
                 <Nav.Link as={Link} to="/login">
-                  <button className="signIn">Sign in</button>
+                  <button className=""> <FaSignInAlt/> Sign in</button>
                 </Nav.Link>
               )}
             </Nav>
+
+
           </Navbar.Collapse>
         </Container>
       </Navbar>

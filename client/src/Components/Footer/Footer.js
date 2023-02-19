@@ -1,9 +1,16 @@
+
+
+
+
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
     return (
+
+
+       
         <footer className="footer text-center text-lg-start text-white bg-dark">
             <section className="py-3">
                 <div className="container text-center text-md-start mt-5">
@@ -117,16 +124,16 @@ const Footer = () => {
 
                             <div className="col-md-6 col-lg-12 text-center footer-i ">
                             <Link to='/'>
-                                <i className="fab fa-facebook-f  me-4 fs-4"> </i>
+                                <i className="fab fa-facebook-f  me-3 fs-4"> </i>
                             </Link >
                             <Link to='/'>
-                                {/* <i className="fab fa-twitter  me-4 fs-4"> </i> */}
+                                <i className="fab fa-twitter  me-4 fs-5"> </i>
                             </Link>
                             <Link to='/'>
-                                <i className="fab fa-linkedin-in me-4 fs-4"> </i>
+                                <i className="fab fa-linkedin-in me-3 fs-4"> </i>
                             </Link>
                             <Link to='/'>
-                                <i className="fab fa-instagram fs-4"> </i>
+                                <i className="fab fa-instagram me-3 fs-4"> </i>
                             </Link>
                         </div>
                         </div>
@@ -137,7 +144,7 @@ const Footer = () => {
                 className="text-center p-3 small-text "
                 // style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
             >
-                <span className="me-2">© 2022 Copyright</span>
+                <span className="me-2">© 2022 Copyright </span>
                {/* <span className='y'> Catering & Event Management</span> */}
 
                 <NavLink to="/" className="text-white text-decoration-none">
@@ -148,6 +155,8 @@ const Footer = () => {
 
             
         </footer>
+        
+     
     );
 };
 

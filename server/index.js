@@ -38,6 +38,7 @@ async function run() {
     const database = client.db("onlineTouristGuide");
     const divisionCollection = database.collection("divisionCategory");
     const spotCollection = database.collection("touristSpot");
+    const packageCollection = database.collection("tour-packages");
     const bookingCollection = database.collection("booking");
     const userCollection = database.collection("users");
     const reviewCollection = database.collection("reviews");
@@ -128,6 +129,13 @@ async function run() {
       const id = req.params.id;
       const query = { _id: ObjectId(id) };
       const result = await spotCollection.findOne(query);
+      res.send(result);
+    });
+
+    // tour packages
+    app.get("/tour-packages", async (req, res) => {
+      const query = packageCollection.find({});
+      const result = await query.toArray();
       res.send(result);
     });
 
