@@ -8,9 +8,9 @@ import KeepGrowing from '../KeepGrowing/KeepGrowing';
 import NewsLatter from '../NewsLatter/NewsLatter';
 import OurMenus from '../OurMenus/OurMenus';
 import OurServices from '../OurServices/OurServices';
-import RequestQoute from '../RequestQoute/RequestQoute';
 import Review from '../Review/Review';
 import WhyBookingUs from '../WhyBookingUs/WhyBookingUs';
+import RequestQoute from '../RequestQoute/RequestQoute';
 
 const Home = () => {
     return (

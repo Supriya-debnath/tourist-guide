@@ -1,16 +1,9 @@
-
-
-
-
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
     return (
-
-
-       
         <footer className="footer text-center text-lg-start text-white bg-dark">
             <section className="py-3">
                 <div className="container text-center text-md-start mt-5">
@@ -44,25 +37,25 @@ const Footer = () => {
 
 
                             <p>
-                                <NavLink to="/services" className="text-white text-decoration-none small-text">
+                                <NavLink to="/services" style={{ textDecoration: 'none' }} className="text-white text-decoration-none small-text">
                                     Dhaka
                                 </NavLink>
                             </p>
 
                             <p>
-                                <NavLink to="/services" className="text-white text-decoration-none small-text">
+                                <NavLink to="/services" style={{ textDecoration: 'none' }} className="text-white text-decoration-none small-text">
                                     Mymensingh
                                 </NavLink>
                             </p>
 
                             <p>
-                                <NavLink to="/services" className="text-white text-decoration-none small-text">
+                                <NavLink to="/services" style={{ textDecoration: 'none' }} className="text-white text-decoration-none small-text">
                                     Rajshahi
                                 </NavLink>
                             </p>
 
                             <p>
-                                <NavLink to="/services" className="text-white text-decoration-none small-text">
+                                <NavLink to="/services" style={{ textDecoration: 'none' }} className="text-white text-decoration-none small-text">
                                     Rangpur
                                 </NavLink>
                             </p>
@@ -114,26 +107,26 @@ const Footer = () => {
 
                             <p className="small-text">
                                 <i className="fas fa-envelope me-3"></i>
-                                info@beautyofruralbengal.com
+                                info@beautyruralbengal.com
                             </p>
 
                             <p className="small-text">
                                 <i className="fas fa-phone me-3"></i>
-                                +880 199 777 822
+                                +8801621502211
                             </p>
 
                             <div className="col-md-6 col-lg-12 text-center footer-i ">
                             <Link to='/'>
-                                <i className="fab fa-facebook-f  me-3 fs-4"> </i>
+                                <i className="fab fa-facebook-f  me-4 fs-4"> </i>
                             </Link >
                             <Link to='/'>
-                                <i className="fab fa-twitter  me-4 fs-5"> </i>
+                                {/* <i className="fab fa-twitter  me-4 fs-4"> </i> */}
                             </Link>
                             <Link to='/'>
-                                <i className="fab fa-linkedin-in me-3 fs-4"> </i>
+                                <i className="fab fa-linkedin-in me-4 fs-4"> </i>
                             </Link>
                             <Link to='/'>
-                                <i className="fab fa-instagram me-3 fs-4"> </i>
+                                <i className="fab fa-instagram fs-4"> </i>
                             </Link>
                         </div>
                         </div>
@@ -141,22 +134,16 @@ const Footer = () => {
                 </div>
                 {/* Copyright */}
             <div
-                className="text-center p-3 small-text "
-                // style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
+                className="text-center align-items-center justify-content-center p-3 small-text "
             >
-                <span className="me-2">© 2022 Copyright </span>
-               {/* <span className='y'> Catering & Event Management</span> */}
-
+                <span className="me-2">© 2023 Copyright</span>
                 <NavLink to="/" className="text-white text-decoration-none">
-                    Beauty Of Rural Bangal
+                    Beauty Of Rural Bengal
                 </NavLink>
             </div>
             </section>
-
             
         </footer>
-        
-     
     );
 };
 

@@ -1,12 +1,18 @@
 import { signOut } from "firebase/auth";
 import React from "react";
 import { useContext } from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Contexts/AuthProvider/AuthProvider";
 // import { AuthContext } from '../Contexts/AuthProvider';
 import { BsFillTelephoneFill } from 'react-icons/bs';
-import { FaSignInAlt } from 'react-icons/fa';
+import {  FiLogIn } from 'react-icons/fi';
+import {  FiLogOut } from 'react-icons/fi';
+import {  FaFacebookF } from 'react-icons/fa';
+import {  FaTwitter } from 'react-icons/fa';
+import {  FaLinkedinIn } from 'react-icons/fa';
+import {  FaInstagram } from 'react-icons/fa';
+import {  FaYoutube } from 'react-icons/fa';
 import "./Header.css";
 
 const Header = () => {
@@ -21,33 +27,30 @@ const Header = () => {
 
   return (
     <>
-
-<section class=" py-2">
+    <section class=" py-2">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
                     <ul class="nav">
-                        <li className="ps-1"> <BsFillTelephoneFill/>+012 345 6789</li>
-                        <li class="ps-3"><i class="fa fa-envelope"></i> info@example.com</li>
+                        <li className="ps-1 d-flex"> <span className="pt-1 pe-2"><BsFillTelephoneFill/></span>+8801621502211</li>
+                        <li class="ps-3"><i class="fa fa-envelope"></i>info@beautyruralbengal.com</li>
                     </ul>
                 </div>
                 <div class="col-sm-6">
-                    <ul class="nav float-end">
-                        <li class="me-3"><a href=""><i class="fab fa-facebook-f "></i></a></li>
-                        <li class="me-3"><a href=""><i class="fab fa-twitter "></i></a></li>
-                        <li class="me-3"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="me-3"><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                    <ul class="nav float-end pt-2">
+                    <Link to="/" class="me-3">< FaFacebookF /></Link>
+                    <Link to="/" class="me-3">< FaTwitter /></Link>
+                    <Link to="/" class="me-3">< FaLinkedinIn /></Link>
+                    <Link to="/" class="me-3">< FaFacebookF /></Link>
+                    <Link to="/" class="me-3">< FaYoutube /></Link>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-
-
       <Navbar collapseOnSelect expand="lg" sticky="top" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand as={Link} to="/">
             <img
               src="https://i.ibb.co/NCcdyxf/travel-logo-design-agency-vector-inspiration-template-218267349.jpg"
               alt=""
@@ -61,7 +64,7 @@ const Header = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="navbar-nav me-auto mb-4 mb-lg-0">
               {/* <Nav className="me-auto"> */}
-              <Nav.Link as={Link} to="/home" className="bg-orange px-3">
+              <Nav.Link as={Link} to="/home">
                 Home
               </Nav.Link>
               <Nav.Link as={Link} to="/services">
@@ -80,19 +83,18 @@ const Header = () => {
                 Contact us
               </Nav.Link>
               </Nav>
-
               <Nav className="navbar-nav ms-auto mb-4 mb-lg-0">
-                <Nav.Link as={Link} to="/tour-package">
-                  <button className="">Tour Packages</button>
-                </Nav.Link>
+              <Nav.Link as={Link} to="/tour-package">
+                <button className="signIn">Tour Packages</button>
+              </Nav.Link>
 
               {user?.uid ? (
                 <>
                   <Nav.Link as={Link} to="/dashboard">
                     <button className="signIn">Dashboard</button>
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/dashboard">
-                    <button className="signIn" onClick={handleLogOut}>Sign Out</button>
+                  <Nav.Link as={Link} to="/">
+                    <button onClick={handleLogOut} className="signIn d-flex "> <span className="pt-2 pe-2"><FiLogOut/></span> Sign Out</button>
                   </Nav.Link>
                   <Link
                     id="user-profile"
@@ -117,12 +119,10 @@ const Header = () => {
                 </>
               ) : (
                 <Nav.Link as={Link} to="/login">
-                  <button className=""> <FaSignInAlt/> Sign in</button>
+                  <button className="signIn d-flex "> <span className="pt-2 pe-2">< FiLogIn/></span> Sign in</button>
                 </Nav.Link>
               )}
             </Nav>
-
-
           </Navbar.Collapse>
         </Container>
       </Navbar>

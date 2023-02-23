@@ -5,17 +5,17 @@ var jwt = require("jsonwebtoken");
 const ObjectId = require("mongodb").ObjectId;
 
 const app = express();
-const port = process.env.port || 5000;
+const port = process.env.port || 7500;
 
 //MiddleWare
 // app.use(cors());
 app.use(
   cors({
-  origin: true,
-  optionsSuccessStatus: 200,
-  credentials: true,
+    origin: true,
+    optionsSuccessStatus: 200,
+    credentials: true,
   })
-  );
+);
 require("dotenv").config();
 
 app.use(express.json());
@@ -42,8 +42,7 @@ async function run() {
     const bookingCollection = database.collection("booking");
     const userCollection = database.collection("users");
     const reviewCollection = database.collection("reviews");
-    const paymentCollection = client.db('ResaleCycle').collection('payments');
-
+    const paymentCollection = client.db("ResaleCycle").collection("payments");
 
     // users Database
 
@@ -119,6 +118,7 @@ async function run() {
       res.send(result);
     });
 
+    // use Aggregate to query from multiple collections and then merge data into one
     app.get("/all-spot", async (req, res) => {
       const query = {};
       const result = await spotCollection.find(query).toArray();
@@ -139,6 +139,13 @@ async function run() {
       res.send(result);
     });
 
+    app.get("/tour-packages/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: ObjectId(id) };
+      const result = await packageCollection.findOne(query);
+      res.send(result);
+    });
+
     app.get("/booking/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: ObjectId(id) };
@@ -153,6 +160,33 @@ async function run() {
       const result = await spotCollection.find(query).toArray();
       res.send(result);
     });
+
+    // app.get("/division/:id", async (req, res) => {
+    //   const id = req.params.id;
+    //   const query = { division: id };
+    //   const availableSeats = await spotCollection.find(query).toArray();
+    //   res.send(availableSeats);
+
+    //   // get the booking information of the previous spot date
+
+    //   const date = req.params.date;
+    //   console.log("date",date);
+    //   const bookingQuery = { dateData: date };
+    //   const alreadyBooked = await bookingCollection
+    //     .find(bookingQuery)
+    //     .toArray();
+    //   console.log("booked list", alreadyBooked);
+    //   availableSeats.forEach((option) => {
+    //     const seatBooked = alreadyBooked.filter(
+    //       (book) => book.spotName === option.name
+    //     );
+    //     const bookedSlots = seatBooked.map((book) => book.seat);
+    //     const remainingSlots = option.seats.filter(
+    //       (seat) => !bookedSlots.includes(seat)
+    //     );
+    //     option.seats = remainingSlots;
+    //   });
+    // });
 
     // POST booking
     app.post("/booking", async (req, res) => {
@@ -244,39 +278,38 @@ async function run() {
       res.send(result);
     });
 
-   //Payment Integration
-   app.post("/create-payment-intent",async (req,res) => {
-    const { price } = req.body;
-    // console.log(price);
-    const amount = price * 100;
-    console.log(amount);
-    // Create a PaymentIntent with the order amount and currency
-    const paymentIntent = await stripe.paymentIntents.create({
+    //Payment Integration
+    app.post("/create-payment-intent", async (req, res) => {
+      const { price } = req.body;
+      // console.log(price);
+      const amount = price * 100;
+      console.log(amount);
+      // Create a PaymentIntent with the order amount and currency
+      const paymentIntent = await stripe.paymentIntents.create({
         currency: "usd",
         amount: amount,
         // automatic_payment_methods: {
         //     enabled: true,
         // },
-        "payment_method_types": [
-            "card"
-        ]
-    });
+        payment_method_types: ["card"],
+      });
 
-    res.send({
+      res.send({
         clientSecret: paymentIntent.client_secret,
+      });
     });
-});
 
-app.post('/payments',async (req,res) => {
-  const data = req.body;
-  const id = data.booking_id;
-  const booking = await bookingCollection.updateOne({ _id: ObjectId(id) },{ $set: { status: 'paid' } });
-  const result = await paymentCollection.insertOne(data);
-  console.log(result);
-  return res.send(result);
-
-});
-
+    app.post("/payments", async (req, res) => {
+      const data = req.body;
+      const id = data.booking_id;
+      const booking = await bookingCollection.updateOne(
+        { _id: ObjectId(id) },
+        { $set: { status: "paid" } }
+      );
+      const result = await paymentCollection.insertOne(data);
+      console.log(result);
+      return res.send(result);
+    });
   } finally {
     // await client.close();
   }

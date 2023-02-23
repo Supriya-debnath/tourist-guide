@@ -23,3 +23,21 @@ code {
   height: 15vw;
   object-fit: cover;
 }
+
+.days{
+  color: brown;
+}
+
+.btnHover button:hover{
+  background-color: green;
+  color: #fff;
+}
+
+.disabled__link {
+  pointer-events: none;
+}
+
+
+.Link__button {
+  text-decoration: none;
+}

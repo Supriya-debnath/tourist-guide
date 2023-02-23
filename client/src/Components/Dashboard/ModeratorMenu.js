@@ -6,7 +6,7 @@ const ModeratorMenu = () => {
   return (
     <>
       <NavLink
-        to='add-spot'
+        to='add-spot' style={{ textDecoration: 'none' }}
         className={({ isActive }) =>
           `flex items-center px-4 py-2 mt-3  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${
             isActive ? 'bg-gray-300  text-gray-700' : 'text-gray-600'
@@ -19,7 +19,7 @@ const ModeratorMenu = () => {
       </NavLink>
 
       <NavLink
-        to='manage-spot'
+        to='manage-spot' style={{ textDecoration: 'none' }}
         className={({ isActive }) =>
           `flex items-center px-4 py-2 mt-3  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${
             isActive ? 'bg-gray-300  text-gray-700' : 'text-gray-600'
@@ -44,7 +44,7 @@ const ModeratorMenu = () => {
       </NavLink> */}
 
       <NavLink
-        to='manage-booking'
+        to='manage-booking' style={{ textDecoration: 'none' }}
         className={({ isActive }) =>
           `flex items-center px-4 py-2 mt-3  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${
             isActive ? 'bg-gray-300  text-gray-700' : 'text-gray-600'
@@ -55,8 +55,8 @@ const ModeratorMenu = () => {
 
         <span className='mx-4 font-medium'>Manage Booking</span>
       </NavLink>
-      <NavLink
-        to='all-review'
+      {/* <NavLink
+        to='all-review' style={{ textDecoration: 'none' }}
         className={({ isActive }) =>
           `flex items-center px-4 py-2 mt-3  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${
             isActive ? 'bg-gray-300  text-gray-700' : 'text-gray-600'
@@ -66,7 +66,7 @@ const ModeratorMenu = () => {
         <UserPlusIcon className='w-5 h-5' />
 
         <span className='mx-4 font-medium'>All Review</span>
-      </NavLink>
+      </NavLink> */}
     </>
   )
 }

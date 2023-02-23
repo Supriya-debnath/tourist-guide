@@ -1,111 +1,110 @@
-
 [
     {
-    "img":"https://media-cdn.tripadvisor.com/media/photo-s/0a/94/db/64/the-road-alongside-the.jpg",
-    "tourPlace" : "Dhaka - Dinajpur - Bogra - Rajshahi ",
-    "days" : "8 Days",
-    "time" : "Starting from",
-    "taka" : "tk 8500",
-    "description":"World Heritage Site, Historical & Archaeological Tour Bangladesh."
-    
+        "img":"https://tribune.com.pk/wp-content/uploads/2015/12/Takht-Bhai-Buddhist-monastery-Travel-my-Pakistan.jpg",
+        "tourPlace" : "Dhaka - Dinajpur - Bogra - Rajshahi - Dhaka ",
+        "days" : "8 Days",
+        "time" : "Starting from",
+        "taka" : "tk 8500",
+        "description":"World Heritage Site, Historical & Archaeological Tour Bangladesh."
+
     },
     {
-    "img":"https://i.ytimg.com/vi/f6HLCV5LFhg/maxresdefault.jpg",
-    "tourPlace" : "Dhaka (City Tour), Inside Dhaka",
-    "days" : "1 Days",
-    "time" : "Starting from",
-    "taka" : "Tk 2500",
-    "description":"Dhaka City Tour - Sight Seeing Tour to Capital City of Bangladesh."
-    
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS53X4UBCreD4dZjkGvxLHqal-W_9Iqv2kpsO1gA9HVvaVx1O24LjfCRgXc03OkDxtld3U&usqp=CAU",
+        "tourPlace" : "Dhaka (City Tour)",
+        "days" : "1 Days",
+        "time" : "Starting from",
+        "taka" : "Tk 2500",
+        "description":"Dhaka City Tour - Sight Seeing Tour to Capital City of Bangladesh."
+
     },
     {
-    "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHKS8JBfdMwnKjAI0XVwXBRUm0st7_6NmyJjUo2G0nEJ1bWjA-mVdpEseAbccvN_PE8ZU&usqp=CAU",
-    "tourPlace" : "Boat Trip Near Dhaka ",
-    "days" : "8 Days",
-    "time" : "Starting from",
-    "taka" : "8500",
-    "description":"River Cruise on Shitalakhya River Near Dhaka."
-    
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS53X4UBCreD4dZjkGvxLHqal-W_9Iqv2kpsO1gA9HVvaVx1O24LjfCRgXc03OkDxtld3U&usqp=CAU",
+        "tourPlace" : "Boat Trip Near Dhaka ",
+        "days" : "8 Days",
+        "time" : "Starting from",
+        "taka" : "8500",
+        "description":"River Cruise on Shitalakhya River Near Dhaka."
+
     },
     {
-    "img":"https://monomousumi.com/wp-content/uploads/815933-article-ahyndnkjoe-1459506517.jpeg",
-    "tourPlace" : "Dhaka - Khulna - Sundarbans - Dhaka ",
-    "days" : "8 Days",
-    "time" : "Starting from",
-    "taka" : "8500",
-    "description":"Explore Sundarbans - Home of The Royal Bengal Tiger."
-    
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS53X4UBCreD4dZjkGvxLHqal-W_9Iqv2kpsO1gA9HVvaVx1O24LjfCRgXc03OkDxtld3U&usqp=CAU",
+        "tourPlace" : "Dhaka - Khulna - Sundarbans - Dhaka ",
+        "days" : "8 Days",
+        "time" : "Starting from",
+        "taka" : "8500",
+        "description":"Explore Sundarbans - Home of The Royal Bengal Tiger."
+
     },
     {
-    "img":"https://www.alordeep.com/uploads/shares/Bandarban_Alor_Deep-2021-02-27-19-53-48.jpg",
-    "tourPlace" : "Dhaka - Rangamati - Bandarban - Dhaka ",
-    "days" : "8 Days",
-    "time" : "Starting from",
-    "taka" : "8500",
-    "description":"Trip to Rangamati and Bandarban Hill Tracks."
-    
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS53X4UBCreD4dZjkGvxLHqal-W_9Iqv2kpsO1gA9HVvaVx1O24LjfCRgXc03OkDxtld3U&usqp=CAU",
+        "tourPlace" : "Dhaka - Rangamati - Bandarban - Dhaka ",
+        "days" : "8 Days",
+        "time" : "Starting from",
+        "taka" : "8500",
+        "description":"Trip to Rangamati and Bandarban Hill Tracks."
+
     },
     {
-    "img":"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9f/59/66/caption.jpg?w=300&h=300&s=1",
-    "tourPlace" : "Dhaka - Sylhet - Srimongal - Dhaka ",
-    "days" : "8 Days",
-    "time" : "Starting from",
-    "taka" : "8500",
-    "description":"Tour to Sylhet & Srimongol - The Picture of Nature!."
-    
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS53X4UBCreD4dZjkGvxLHqal-W_9Iqv2kpsO1gA9HVvaVx1O24LjfCRgXc03OkDxtld3U&usqp=CAU",
+        "tourPlace" : "Dhaka - Sylhet - Srimongal - Dhaka ",
+        "days" : "8 Days",
+        "time" : "Starting from",
+        "taka" : "8500",
+        "description":"Tour to Sylhet & Srimongol - The Picture of Nature!."
+
     },
     {
-    "img":"https://thefinancialexpress.com.bd/uploads/1644727380.jpeg",
-    "tourPlace" : "Cox's Bazar - Teknaf - St. Martin - Dhaka ",
-    "days" : "8 Days",
-    "time" : "Starting from",
-    "taka" : "8500",
-    "description":" Explore Cox's Bazar and St Martin's Island."
-    
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS53X4UBCreD4dZjkGvxLHqal-W_9Iqv2kpsO1gA9HVvaVx1O24LjfCRgXc03OkDxtld3U&usqp=CAU",
+        "tourPlace" : "Dhaka - Cox's Bazar - Teknaf - St. Martin - Dhaka ",
+        "days" : "8 Days",
+        "time" : "Starting from",
+        "taka" : "8500",
+        "description":"Beach Tour Packages - Explore Cox's Bazar and St Martin's Island."
+
     },
     {
-    "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS53X4UBCreD4dZjkGvxLHqal-W_9Iqv2kpsO1gA9HVvaVx1O24LjfCRgXc03OkDxtld3U&usqp=CAU",
-    "tourPlace" : "Dhaka - Rangamati - Dhaka ",
-    "days" : "8 Days",
-    "time" : "Starting from",
-    "taka" : "8500",
-    "description":"Discover Rangamati (Hill Tour / Adventure Tour / Nature Tour)."
-    
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS53X4UBCreD4dZjkGvxLHqal-W_9Iqv2kpsO1gA9HVvaVx1O24LjfCRgXc03OkDxtld3U&usqp=CAU",
+        "tourPlace" : "Dhaka - Rangamati - Dhaka ",
+        "days" : "8 Days",
+        "time" : "Starting from",
+        "taka" : "8500",
+        "description":"Discover Rangamati."
+
     },
     {
-    "img":"https://www.daily-sun.com/assets/news_images/2016/06/27/Daily-Sun-Magazine-18.jpg",
-    "tourPlace" : "Dhaka - Bandarban - Dhaka ",
-    "days" : "8 Days",
-    "time" : "Starting from",
-    "taka" : "8500",
-    "description":"Discover Bandarban (Hill Tour / Adventure Tour / Nature Tour)."
-    
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS53X4UBCreD4dZjkGvxLHqal-W_9Iqv2kpsO1gA9HVvaVx1O24LjfCRgXc03OkDxtld3U&usqp=CAU",
+        "tourPlace" : "Dhaka - Bandarban - Dhaka ",
+        "days" : "8 Days",
+        "time" : "Starting from",
+        "taka" : "8500",
+        "description":"Discover Bandarban (Hill Tour / Adventure Tour / Nature Tour)."
+
     },
     {
-    "img":"https://travelvibe.net/wp-content/uploads/2021/03/Most-attractive-tourist-attraction-of-bangladesh-saint-martin-e1615271792566.jpg",
-    "tourPlace" : "Dhaka - Cox's Bazar - Dhaka",
-    "days" : "8 Days",
-    "time" : "Starting from",
-    "taka" : "8500",
-    "description":"Tour To Cox's Bazar."
-    
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS53X4UBCreD4dZjkGvxLHqal-W_9Iqv2kpsO1gA9HVvaVx1O24LjfCRgXc03OkDxtld3U&usqp=CAU",
+        "tourPlace" : "Dhaka - Cox's Bazar - Dhaka",
+        "days" : "8 Days",
+        "time" : "Starting from",
+        "taka" : "8500",
+        "description":"Tour To Cox's Bazar."
+
     },
     {
-    "img":"https://www.theindependentbd.com/assets/news_images/Ecotourism-and-Green1.jpg",
-    "tourPlace" : "Dhaka - Teknaf - Saint Martins Island - Dhaka ",
-    "days" : "8 Days",
-    "time" : "Starting from",
-    "taka" : "8500",
-    "description":"Tour To St. Martins Island."
-    
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS53X4UBCreD4dZjkGvxLHqal-W_9Iqv2kpsO1gA9HVvaVx1O24LjfCRgXc03OkDxtld3U&usqp=CAU",
+        "tourPlace" : "Dhaka - Teknaf - Saint Martins Island - Dhaka ",
+        "days" : "8 Days",
+        "time" : "Starting from",
+        "taka" : "8500",
+        "description":"Tour To St. Martins Island."
+
     },
     {
-    "img":"https://cdn.risingbd.com/media/imgAll/2022August/en/teknaf-2209261112-2209261156.jpg",
-    "tourPlace" : "Dhaka - Kuakata - Dhaka ",
-    "days" : "8 Days",
-    "time" : "Starting from",
-    "taka" : "8500",
-    "description":"Tour To St. Martins Island ( Adventure Tour / Nature Tour)."
-    
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS53X4UBCreD4dZjkGvxLHqal-W_9Iqv2kpsO1gA9HVvaVx1O24LjfCRgXc03OkDxtld3U&usqp=CAU",
+        "tourPlace" : "Dhaka - Kuakata - Dhaka ",
+        "days" : "8 Days",
+        "time" : "Starting from",
+        "taka" : "8500",
+        "description":"Tour To St. Martins Island."
+
     }
-    ]
+]
